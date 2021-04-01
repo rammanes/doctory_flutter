@@ -1,0 +1,9 @@
+{
+  "welcome": "Welcome to Doctory",
+  "user_name": "Username",
+  "password": "Password",
+  "register": "Register",
+  "login": "Login",
+  "register_doctor_1": "Are you a doctor?",
+  "register_doctor_2": "Register here"
+}

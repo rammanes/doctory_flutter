@@ -1,0 +1,9 @@
+{
+  "welcome": "Bienvenue chez le docteur",
+  "user_name": "Nom d'utilisateur",
+  "password": "Mot de passe",
+  "register": "S'inscrire",
+  "login": "Connexion",
+  "register_doctor_1": "Etes-vous un docteur?",
+  "register_doctor_2": "Inscrivez-vous ici"
+}
