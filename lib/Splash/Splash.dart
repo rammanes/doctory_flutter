@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class Splash extends StatefulWidget{
 
   @override
@@ -40,9 +39,7 @@ class Splash extends StatefulWidget{
 
     userId = null;
 
-    String language = Localizations.localeOf(context).languageCode;
-    prefs.setString("language", language);
-    print(language);
+
     checkUser();
   }
 

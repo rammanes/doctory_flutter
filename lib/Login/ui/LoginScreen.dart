@@ -7,9 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:doctory_flutter/translation/AppLocalization.dart';
 
-import '../../main.dart';
 
 class LoginScreen extends StatefulWidget{
   @override

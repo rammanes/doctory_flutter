@@ -7,6 +7,7 @@ import 'package:doctory_flutter/translation/AppLocalization.dart';
 import 'package:doctory_flutter/translation/language_constants.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:ui' as ui;
 
 
 void main() => runApp(MyApp());
@@ -81,12 +82,14 @@ class _MyAppState extends State<MyApp> {
           __appLocalizationsDelegate
         ],
 
-        supportedLocales: [Locale('en'),Locale('ar'),Locale('tr'),Locale('fr')],
-//      supportedLocales: [
-//        Locale("en",""),
-//        Locale("ar",""),
-//        Locale("tr",""),
-//      ],
+        supportedLocales:
+        [Locale('en'),
+          Locale('ar'),
+          Locale('tr'),
+          Locale('fr')
+        ],
+
+
 
         locale: __appLocalizationsDelegate.overriddenLocale ,
         localeResolutionCallback: (locale, supportedLocales) {
@@ -98,6 +101,12 @@ class _MyAppState extends State<MyApp> {
           }
           return supportedLocales.first;
         },
+
+          // localeResolutionCallback: (deviceLocale, supportedLocales) {
+          //   _locale = deviceLocale; // here you make your app language similar to device language , but you should check whether the localization is supported by your app
+          //   // print("country code: "+_locale.countryCode);
+          //   print("device local: " + deviceLocale.languageCode);
+          // },
     //    onGenerateRoute: CustomRouter.generatedRoute,
   //      initialRoute: Splash,
         home: Splash(),
@@ -114,24 +123,26 @@ class _MyAppState extends State<MyApp> {
   }
 
   void getLanguage()async   {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    currentLanguage = prefs.getString("language");
+    // final SharedPreferences prefs = await SharedPreferences.getInstance();
+    // currentLanguage = prefs.getString("language");
 
    // String language = Localizations.localeOf(context).languageCode;
 
     //   currentLanguage = "ar";
+    currentLanguage = ui.window.locale.languageCode;
 
-   //  print(language);
 
-     // print(currentLanguage);
     if(currentLanguage == null){
 
-//      Locale myLocale = Localizations.localeOf(context);
-//      _specificLocalizationDelegate = new SpecificLocalizationDelegate(myLocale);
-    }else {
       helper.onLocaleChanged = onLocaleChange;
       __appLocalizationsDelegate =
           SpecificLocalizationDelegate(Locale("en"));
+    }else {
+      print(currentLanguage);
+
+      helper.onLocaleChanged = onLocaleChange;
+      __appLocalizationsDelegate =
+          SpecificLocalizationDelegate(Locale(currentLanguage));
     }
 
   }
