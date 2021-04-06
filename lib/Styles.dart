@@ -1,5 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
@@ -39,6 +40,36 @@ Widget shadowTextField(TextEditingController _controller, String labelText){
           fontSize: 15,
         ),
       ),
+    ),
+  );
+}
+
+Widget shadowTextView( String labelText, Function onClick){
+  return  Container(
+    height: 50,
+    alignment: Alignment.centerLeft,
+    padding: EdgeInsets.only(left: 32),
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.all(Radius.circular(25.0)),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey.withOpacity(0.1),
+          spreadRadius: 5,
+          blurRadius: 7,
+          offset: Offset(0, 5), // changes position of shadow
+        ),
+      ],
+    ),
+    child:new GestureDetector(
+      onTap: () {
+        onClick();
+      },
+      child: Text(
+        labelText,
+        style: TextStyle(color: colorGray),
+
+    ),
     ),
   );
 }

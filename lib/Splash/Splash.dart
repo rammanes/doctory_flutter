@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:devicelocale/devicelocale.dart';
 import 'package:doctory_flutter/Login/ui/LoginScreen.dart';
+import 'package:doctory_flutter/colors.dart';
+import 'package:doctory_flutter/translation/language_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -18,6 +20,8 @@ class Splash extends StatefulWidget{
   String userId;
   String role;
   Timer timer;
+  double screenWidth = 0.0 ;
+  double screenHeight = 0.0;
 
   @override
   void initState() {
@@ -25,9 +29,42 @@ class Splash extends StatefulWidget{
     super.initState();
   }
 
+  getScreenSize(){
+    setState(() {
+      screenWidth = MediaQuery.of(context).size.width;
+      screenHeight = MediaQuery.of(context).size.height;
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.white,);
+    getScreenSize();
+    return Scaffold(
+      body: Container(
+      color: Colors.white,
+    alignment: Alignment.center,
+      child: Container(
+      width: screenWidth,
+        height: screenHeight/4,
+        child: Column(
+          children: [
+            Image.asset("assets/row/login/doctory_full_copy.png",height: screenHeight/7,width: screenWidth/2,),
+            Text(
+                getTranslated(context, 'splash'),
+                style:  TextStyle(
+                    color:   colorBlue,
+                    fontWeight: FontWeight.w900,
+                   // fontStyle:  FontStyle.normal,
+                    fontSize: 27.0
+                ),
+               // textAlign: TextAlign.left
+            )
+          ],
+        ),
+      ),
+      ),
+    );
   }
 
   void getUser() async {

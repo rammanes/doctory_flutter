@@ -1,9 +1,23 @@
 {
+  "splash": "رعاية أفضل",
+
   "welcome": "مرحبا بكم في دكتوري",
   "user_name": "اسم المستخدم",
   "password": "كلمة المرور",
   "register": "تسجيل",
   "login": "تسجيل الدخول",
   "register_doctor_1": "هل انت دكتور؟",
-  "register_doctor_2": "سجل هنا"
+  "register_doctor_2": "سجل هنا",
+
+  "full_name": "الاسم الكامل",
+  "nationality": "الجنسية",
+  "id_number": "رقم الهوية",
+  "back": "عودة",
+  "next": "التالي",
+  "email": "البريد الإلكتروني",
+  "phone": "رقم الهاتف",
+  "repeat_password": "اعد كلمة السر",
+  "gender": "جنس",
+  "birthday": "يوم الميلاد",
+  "blood_type": "فصيلة الدم"
 }

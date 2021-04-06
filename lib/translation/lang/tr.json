@@ -1,9 +1,23 @@
 {
+  "splash": "Daha İyi Bakım",
+
   "welcome": "Doktora Hoş Geldiniz",
   "user_name": "Kullanıcı adı",
   "password": "şifre",
   "register": "Kayıt ol",
   "login": "Oturum aç",
   "register_doctor_1": "Doktor musunuz?",
-  "register_doctor_2": "Kayıt Olun"
+  "register_doctor_2": "Kayıt Olun",
+
+  "full_name": "Ad Soyad",
+  "nationality": "Milliyet",
+  "id_number": "Kimlik Numarası",
+  "back": "Geri",
+  "next": "Sonraki",
+  "email": "E-posta adresi",
+  "phone": "Telefon numarası",
+  "repeat_password": "Şifreyi tekrar girin",
+  "gender": "Cinsiyet",
+  "birthday": "Doğum günü",
+  "blood_type": "Kan grubu"
 }

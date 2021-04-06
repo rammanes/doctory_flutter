@@ -1,9 +1,23 @@
 {
+  "splash": "De meilleurs soins",
+
   "welcome": "Bienvenue chez le docteur",
   "user_name": "Nom d'utilisateur",
   "password": "Mot de passe",
   "register": "S'inscrire",
   "login": "Connexion",
   "register_doctor_1": "Etes-vous un docteur?",
-  "register_doctor_2": "Inscrivez-vous ici"
+  "register_doctor_2": "Inscrivez-vous ici",
+
+  "full_name": "Nom et prénom",
+  "nationality": "Nationalité",
+  "id_number": "Numéro d'identification",
+  "back": "Retour",
+  "next": "Suivant",
+  "email": "E-mail",
+  "phone": "Numéro de téléphone",
+  "repeat_password": "Répéter le mot de passe",
+  "gender": "Le sexe",
+  "birthday": "Date d'anniversaire",
+  "blood_type": "Groupe sanguin"
 }

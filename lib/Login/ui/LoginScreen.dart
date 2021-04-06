@@ -1,5 +1,6 @@
 import 'package:doctory_flutter/Login/blocs/LoginBlocs.dart';
 import 'package:doctory_flutter/Login/model/LoginResponse.dart';
+import 'package:doctory_flutter/PatientRegister/ui/FirstStep.dart';
 import 'package:doctory_flutter/Styles.dart';
 import 'package:doctory_flutter/colors.dart';
 import 'package:doctory_flutter/translation/language_constants.dart';
@@ -128,12 +129,13 @@ class LoginScreen extends StatefulWidget{
 
   void onClickRegister(){
     // go to patient register
+    Route route = MaterialPageRoute(builder: (context) => FirstStep());
+    Navigator.pushReplacement(context, route);
   }
 
   void onClickLogin() {
     checkInputs();
     print("login");
-
   }
 
   void checkInputs(){

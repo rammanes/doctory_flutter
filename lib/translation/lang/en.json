@@ -1,9 +1,25 @@
 {
+  "splash": "Better Care",
+
+
   "welcome": "Welcome to Doctory",
   "user_name": "Username",
   "password": "Password",
   "register": "Register",
   "login": "Login",
   "register_doctor_1": "Are you a doctor?",
-  "register_doctor_2": "Register here"
+  "register_doctor_2": "Register here",
+
+  "full_name": "Full Name",
+  "nationality": "Nationality",
+  "id_number": "ID Number",
+  "back": "Back",
+  "next": "Next",
+  "email": "Email",
+  "phone_number": "Phone Number",
+  "repeat_password": "Repeat Password",
+  "gender": "Gender",
+  "birthday": "Birthday",
+  "blood_type": "Blood Type"
+
 }
