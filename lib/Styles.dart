@@ -83,7 +83,7 @@ Widget button(String text,double width, Color color, Color textColor, Color shad
       borderRadius: BorderRadius.all(Radius.circular(25.0)),
       boxShadow: [
         BoxShadow(
-          color: shadowColor,
+          color: shadowColor?? "",
           spreadRadius: 5,
           blurRadius: 7,
           offset: Offset(0, 5), // changes position of shadow

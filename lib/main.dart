@@ -1,4 +1,5 @@
 import 'package:devicelocale/devicelocale.dart';
+import 'file:///C:/doctory_flutter/lib/Dashboard/ui/Dashboard.dart';
 import 'package:doctory_flutter/Splash/Splash.dart';
 import 'package:doctory_flutter/translation/LocaleHelper.dart';
 

@@ -37,11 +37,14 @@ dependencies:
 
 
 
+
 dev_dependencies:
+  image: 2.0.7
   flutter_test:
     sdk: flutter
   integration_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,6 +66,16 @@ flutter:
     - assets/row/login/doctory_full_copy.png
     - assets/row/login/image_1.png
     - assets/row/registration/doctor.png
+    - assets/icons/1.png
+    - assets/icons/notifications.png
+    - assets/icons/bell.png
+    - assets/icons/user.png
+    - assets/icons/path_941.png
+    - assets/icons/group_338.png
+    - assets/icons/group_337.png
+    - assets/icons/65.png
+    - assets/icons/icons_file_records.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

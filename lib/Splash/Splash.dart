@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:devicelocale/devicelocale.dart';
+import 'file:///C:/doctory_flutter/lib/Dashboard/ui/Dashboard.dart';
 import 'package:doctory_flutter/Login/ui/LoginScreen.dart';
 import 'package:doctory_flutter/colors.dart';
 import 'package:doctory_flutter/translation/language_constants.dart';
@@ -19,6 +20,7 @@ class Splash extends StatefulWidget{
 
   String userId;
   String role;
+  String token;
   Timer timer;
   double screenWidth = 0.0 ;
   double screenHeight = 0.0;
@@ -73,11 +75,14 @@ class Splash extends StatefulWidget{
     userId = prefs.getString("userId");
     print("UserID: "+userId.toString());
     role = prefs.getString("role");
+    token = prefs.get("token");
+    print("UserToken   "+token.toString());
 
-    userId = null;
+    //userId = null;
+    setState(() {
+      checkUser();
+    });
 
-
-    checkUser();
   }
 
   void checkUser() async{
@@ -97,8 +102,8 @@ class Splash extends StatefulWidget{
           setState(() {
             // open doctor dashboard
 
-            // Route route = MaterialPageRoute(builder: (context) => PatientDashboard());
-            // Navigator.pushReplacement(context, route);
+             Route route = MaterialPageRoute(builder: (context) => Dashboard());
+             Navigator.pushReplacement(context, route);
           });
         });
       } else if (role == "4") {
@@ -106,8 +111,8 @@ class Splash extends StatefulWidget{
           setState(() {
             // open patient dashboard
 
-            // Route route = MaterialPageRoute(builder: (context) => DoctorDashboard());
-            // Navigator.pushReplacement(context, route);
+             Route route = MaterialPageRoute(builder: (context) => Dashboard());
+             Navigator.pushReplacement(context, route);
           });
         });
       }
