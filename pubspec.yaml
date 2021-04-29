@@ -34,12 +34,14 @@ dependencies:
   http: ^0.12.2
   shared_preferences: ^0.5.12+4
   devicelocale: ^0.1.1
+  flutter_svg: ^0.22.0
+  google_fonts: 1.1.1
+  flat_icons_flutter: ^1.0.2
 
 
 
 
 dev_dependencies:
-  image: 2.0.7
   flutter_test:
     sdk: flutter
   integration_test:
@@ -67,14 +69,21 @@ flutter:
     - assets/row/login/image_1.png
     - assets/row/registration/doctor.png
     - assets/icons/1.png
-    - assets/icons/notifications.png
-    - assets/icons/bell.png
-    - assets/icons/user.png
-    - assets/icons/path_941.png
-    - assets/icons/group_338.png
-    - assets/icons/group_337.png
     - assets/icons/65.png
     - assets/icons/icons_file_records.png
+    - assets/icons/path_941.svg
+    - assets/icons/group_338.svg
+    - assets/icons/group_337.svg
+    - assets/icons/notifications.svg
+    - assets/icons/icons_file_records.svg
+    - assets/icons/drawable/bell.svg
+    - assets/icons/drawable/user.svg
+    - assets/icons/drawable/icons8-opened-folder.svg
+    - assets/icons/drawable/faq.svg
+    - assets/icons/drawable/faqs.svg
+    - assets/icons/drawable/profile.svg
+    - assets/icons/drawable/rectangle.svg
+    - assets/icons/drawable/openfolder.svg
 
   #   - images/a_dot_ham.jpeg
 

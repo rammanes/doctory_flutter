@@ -52,6 +52,7 @@ class Splash extends StatefulWidget{
         child: Column(
           children: [
             Image.asset("assets/row/login/doctory_full_copy.png",height: screenHeight/7,width: screenWidth/2,),
+
             Text(
                 getTranslated(context, 'splash'),
                 style:  TextStyle(
